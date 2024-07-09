@@ -19,6 +19,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeTest;
@@ -66,7 +67,7 @@ public class Setup {
 
 	public static XSSFSheet ExcelSheet(String nameSheet) throws InvalidFormatException, IOException {
 		
-		File fileName = new File("C:\\Users\\huthaifa\\eclipse-workspace\\TestCourses\\dataExcel\\login.xlsx");
+		File fileName = new File("C:\\Users\\huthaifa\\git\\WebSite-Courses.ultimateqa\\TestCourses\\dataExcel\\login.xlsx");
 	     excelFile = new XSSFWorkbook(fileName);
 		XSSFSheet sheetName =  excelFile.getSheet(nameSheet);
 		
@@ -81,7 +82,7 @@ public class Setup {
 	
 	public static void WriteExcelSheet(String nameSheet , String value) throws InvalidFormatException, IOException {
 		
-		  FileInputStream fileName = new FileInputStream("C:\\Users\\huthaifa\\eclipse-workspace\\TestCourses\\dataExcel\\login.xlsx");
+		  FileInputStream fileName = new FileInputStream("C:\\Users\\huthaifa\\git\\WebSite-Courses.ultimateqa\\TestCourses\\dataExcel\\login.xlsx");
 		  XSSFWorkbook  excelFile1 = new XSSFWorkbook(fileName);
 		 XSSFSheet sheetName =  excelFile1.getSheet(nameSheet);
 		

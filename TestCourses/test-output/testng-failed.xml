@@ -3,21 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="courses.SignUp">
+      <class name="courses.EditProfile">
         <methods>
-          <include name="CheckSignUpValidationLastName"/>
-          <include name="CheckSignUpValidationPassword"/>
-          <include name="CheckSignUpValidationReadAndAgree"/>
-          <include name="CheckSignUpValidationEmailReady"/>
-          <include name="CheckSignUpValidationEmail"/>
-          <include name="tearDown"/>
+          <include name="CheakUpdateProfile"/>
           <include name="OpenDrive"/>
-          <include name="CheckSignUp"/>
-          <include name="CheckSignUpValidationFirstName"/>
-          <include name="CheckSignUpValidationPasswordleast_8_Characters"/>
           <include name="EndTest"/>
         </methods>
-      </class> <!-- courses.SignUp -->
+      </class> <!-- courses.EditProfile -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

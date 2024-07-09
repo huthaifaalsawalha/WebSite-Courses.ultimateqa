@@ -101,6 +101,8 @@ public class EditProfile extends Setup {
 		Select timeZone= new Select(driver.findElement(By.xpath("/html/body/div[1]/div/div/main/form/div/div[2]/div[5]/div/select")));
 		HighlightElement(timeZone.getWrappedElement());
 		timeZone.selectByVisibleText(sheetEditProfile.getRow(numberRow).getCell(5).getStringCellValue());
+		//System.out.println(timeZone.getAllSelectedOptions());
+		System.out.println(timeZone.getFirstSelectedOption().getText());
 		Thread.sleep(3000);
           
 		
@@ -108,30 +110,43 @@ public class EditProfile extends Setup {
 		WebElement locateSaveButton = driver.findElement(By.xpath("/html/body/div[1]/div/div/main/form/div/div[2]/div[6]/input"));
 		HighlightElement(locateSaveButton);
 		locateSaveButton.sendKeys(Keys.ENTER);
-		Thread.sleep(3000);
+		//Thread.sleep(5000);
 		
 		String acualMessage= driver.findElement(By.xpath("/html/body/div[2]/div/div/div/p")).getText();
 		String expectMessage = "Your profile was successfully updated.";
+		System.out.println(acualMessage);
 		
-		String acualEmail= locateUpdateEmail.getText();
-	    String expectEmail=sheetEditProfile.getRow(numberRow).getCell(0).getStringCellValue();
+	   String acualEmail= driver.findElement(By.id("user[email]")).getAttribute("value");
+	   String expectEmail=sheetEditProfile.getRow(numberRow).getCell(0).getStringCellValue();
 	    
-	    String acualfirstName= locateFirstName.getText();
+	   String acualfirstName= driver.findElement(By.id("user[first_name]")).getAttribute("value");
 	    String expectFirstName=sheetEditProfile.getRow(numberRow).getCell(1).getStringCellValue();
 	    
-	    String acuallastName= locateLastName.getText();
+	  String acuallastName= driver.findElement(By.id("user[last_name]")).getAttribute("value");
 	    String expectlasttName=sheetEditProfile.getRow(numberRow).getCell(2).getStringCellValue();
 	    
-	    String acualCompany= locateCompany.getText();
+	    String acualCompany= driver.findElement(By.xpath("/html/body/div[1]/div/div/main/form/div/div[2]/div[3]/input")).getAttribute("value");
 	    String expectCompany=sheetEditProfile.getRow(numberRow).getCell(3).getStringCellValue();
 	    
 	    
-	    String acualTitle= locateProfessionalTitle.getText();
+	    String acualTitle= driver.findElement(By.xpath("/html/body/div[1]/div/div/main/form/div/div[2]/div[4]/input")).getAttribute("value");
 	    String expectTitle=sheetEditProfile.getRow(numberRow).getCell(4).getStringCellValue();
-	    
-	    String acualTimeZone= timeZone.toString();
+	  
+		Select timeZone2= new Select(driver.findElement(By.xpath("//select[contains(@id,'user')]")));
+	   String acualTimeZone=timeZone2.getFirstSelectedOption().getText();
 	    String expectTimeZone=sheetEditProfile.getRow(numberRow).getCell(5).getStringCellValue();
+	   System.out.println( timeZone2.getFirstSelectedOption().getText());
 	    
+		WebElement locateMyAccountButton1 =driver.findElement(By.xpath("/html/body/header/div[2]/div/nav/ul/li[2]/button"));
+		HighlightElement(locateMyAccountButton1);
+		locateMyAccountButton1.click();
+		Thread.sleep(3000);
+		
+		WebElement locateSignOut = driver.findElement(By.xpath("/html/body/header/div[2]/div/nav/ul/li[2]/ul/li[4]/a"));
+	    HighlightElement(locateSignOut);
+		locateSignOut.click();
+		Thread.sleep(4000);
+		
 		myAssert.assertEquals(acualMessage, expectMessage);
 		myAssert.assertEquals(acualEmail, expectEmail);
 		myAssert.assertEquals(acualfirstName, expectFirstName);
@@ -143,7 +158,7 @@ public class EditProfile extends Setup {
 		myAssert.assertAll();
 	}
 	
-	
+
 	@Test(priority = 2)
 	public void CheakUpdateImage () throws InvalidFormatException, IOException, InterruptedException {
 		
@@ -214,9 +229,17 @@ public class EditProfile extends Setup {
 	
 	WebElement locateImage2 = driver.findElement(By.xpath("/html/body/div[1]/div/div/main/form/div/div[1]/div/div/img"));
     String expectImgSRC = locateImage2.getAttribute("src");
-	System.out.print(expectImgSRC);
 	
 	
+	WebElement locateMyAccountButton1 =driver.findElement(By.xpath("/html/body/header/div[2]/div/nav/ul/li[2]/button"));
+	HighlightElement(locateMyAccountButton1);
+	locateMyAccountButton1.click();
+	Thread.sleep(3000);
+	
+	WebElement locateSignOut = driver.findElement(By.xpath("/html/body/header/div[2]/div/nav/ul/li[2]/ul/li[4]/a"));
+	HighlightElement(locateSignOut);
+	locateSignOut.click();
+	Thread.sleep(4000);
 	
 	myAssert.assertEquals(acualMessage, expectMessage);
     myAssert.assertNotEquals(imgSRC, expectImgSRC);
@@ -226,6 +249,7 @@ public class EditProfile extends Setup {
 	}
 
 	
+
 	@AfterMethod
 	public void tearDown(ITestResult result) throws Exception {
 		  Random random =new Random();

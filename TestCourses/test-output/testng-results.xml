@@ -1,36 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-07T17:40:24 PDT" name="Default suite" finished-at="2024-07-07T17:40:33 PDT" duration-ms="9808">
+  <suite started-at="2024-07-09T14:55:32 PDT" name="Default suite" finished-at="2024-07-09T14:58:49 PDT" duration-ms="197380">
     <groups>
     </groups>
-    <test started-at="2024-07-07T17:40:24 PDT" name="Default test" finished-at="2024-07-07T17:40:33 PDT" duration-ms="9808">
-      <class name="courses.CheakURL">
-        <test-method is-config="true" signature="OpenDrive()[pri:0, instance:courses.CheakURL@40f1be1b]" started-at="2024-07-07T17:40:24 PDT" name="OpenDrive" finished-at="2024-07-07T17:40:28 PDT" duration-ms="4054" status="PASS">
+    <test started-at="2024-07-09T14:55:32 PDT" name="Default test" finished-at="2024-07-09T14:58:49 PDT" duration-ms="197380">
+      <class name="courses.EditProfile">
+        <test-method is-config="true" signature="OpenDrive()[pri:0, instance:courses.EditProfile@726e5805]" started-at="2024-07-09T14:55:32 PDT" name="OpenDrive" finished-at="2024-07-09T14:55:37 PDT" duration-ms="5565" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenDrive -->
-        <test-method signature="CheakNavegateURL()[pri:0, instance:courses.CheakURL@40f1be1b]" started-at="2024-07-07T17:40:28 PDT" name="CheakNavegateURL" finished-at="2024-07-07T17:40:33 PDT" duration-ms="5045" status="PASS">
+        <test-method signature="CheakUpdateProfile()[pri:1, instance:courses.EditProfile@726e5805]" started-at="2024-07-09T14:55:37 PDT" name="CheakUpdateProfile" finished-at="2024-07-09T14:57:28 PDT" duration-ms="110295" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheakNavegateURL -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:courses.CheakURL@40f1be1b]" started-at="2024-07-07T17:40:33 PDT" name="tearDown" finished-at="2024-07-07T17:40:33 PDT" duration-ms="7" status="PASS">
+        </test-method> <!-- CheakUpdateProfile -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:courses.EditProfile@726e5805]" started-at="2024-07-09T14:57:28 PDT" name="tearDown" finished-at="2024-07-09T14:57:28 PDT" duration-ms="13" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CheakNavegateURL status=SUCCESS method=CheakURL.CheakNavegateURL()[pri:0, instance:courses.CheakURL@40f1be1b] output={null}]]]>
+                <![CDATA[[TestResult name=CheakUpdateProfile status=SUCCESS method=EditProfile.CheakUpdateProfile()[pri:1, instance:courses.EditProfile@726e5805] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="EndTest()[pri:0, instance:courses.CheakURL@40f1be1b]" started-at="2024-07-07T17:40:33 PDT" name="EndTest" finished-at="2024-07-07T17:40:33 PDT" duration-ms="659" status="PASS">
+        <test-method signature="CheakUpdateImage()[pri:2, instance:courses.EditProfile@726e5805]" started-at="2024-07-09T14:57:28 PDT" name="CheakUpdateImage" finished-at="2024-07-09T14:58:49 PDT" duration-ms="80791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheakUpdateImage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:courses.EditProfile@726e5805]" started-at="2024-07-09T14:58:49 PDT" name="tearDown" finished-at="2024-07-09T14:58:49 PDT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheakUpdateImage status=SUCCESS method=EditProfile.CheakUpdateImage()[pri:2, instance:courses.EditProfile@726e5805] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="EndTest()[pri:0, instance:courses.EditProfile@726e5805]" started-at="2024-07-09T14:58:49 PDT" name="EndTest" finished-at="2024-07-09T14:58:49 PDT" duration-ms="663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndTest -->
-      </class> <!-- courses.CheakURL -->
+      </class> <!-- courses.EditProfile -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
