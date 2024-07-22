@@ -1,51 +1,404 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="2" failed="1" skipped="4">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-09T14:55:32 PDT" name="Default suite" finished-at="2024-07-09T14:58:49 PDT" duration-ms="197380">
+  <suite started-at="2024-07-22T11:24:58 PDT" name="Default suite" finished-at="2024-07-22T11:27:09 PDT" duration-ms="130487">
     <groups>
     </groups>
-    <test started-at="2024-07-09T14:55:32 PDT" name="Default test" finished-at="2024-07-09T14:58:49 PDT" duration-ms="197380">
-      <class name="courses.EditProfile">
-        <test-method is-config="true" signature="OpenDrive()[pri:0, instance:courses.EditProfile@726e5805]" started-at="2024-07-09T14:55:32 PDT" name="OpenDrive" finished-at="2024-07-09T14:55:37 PDT" duration-ms="5565" status="PASS">
+    <test started-at="2024-07-22T11:24:58 PDT" name="Default test" finished-at="2024-07-22T11:27:09 PDT" duration-ms="130487">
+      <class name="courses.SignUp">
+        <test-method is-config="true" signature="OpenDrive()[pri:0, instance:courses.SignUp@7c2b6087]" started-at="2024-07-22T11:24:58 PDT" name="OpenDrive" finished-at="2024-07-22T11:25:03 PDT" duration-ms="5216" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenDrive -->
-        <test-method signature="CheakUpdateProfile()[pri:1, instance:courses.EditProfile@726e5805]" started-at="2024-07-09T14:55:37 PDT" name="CheakUpdateProfile" finished-at="2024-07-09T14:57:28 PDT" duration-ms="110295" status="PASS">
+        <test-method signature="CheckSignUpValidationLastName()[pri:2, instance:courses.SignUp@7c2b6087]" started-at="2024-07-22T11:25:03 PDT" name="CheckSignUpValidationLastName" finished-at="2024-07-22T11:26:03 PDT" duration-ms="60059" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheakUpdateProfile -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:courses.EditProfile@726e5805]" started-at="2024-07-09T14:57:28 PDT" name="tearDown" finished-at="2024-07-09T14:57:28 PDT" duration-ms="13" status="PASS">
+        </test-method> <!-- CheckSignUpValidationLastName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:courses.SignUp@7c2b6087]" started-at="2024-07-22T11:26:03 PDT" name="tearDown" finished-at="2024-07-22T11:26:03 PDT" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CheakUpdateProfile status=SUCCESS method=EditProfile.CheakUpdateProfile()[pri:1, instance:courses.EditProfile@726e5805] output={null}]]]>
+                <![CDATA[[TestResult name=CheckSignUpValidationLastName status=SUCCESS method=SignUp.CheckSignUpValidationLastName()[pri:2, instance:courses.SignUp@7c2b6087] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="CheakUpdateImage()[pri:2, instance:courses.EditProfile@726e5805]" started-at="2024-07-09T14:57:28 PDT" name="CheakUpdateImage" finished-at="2024-07-09T14:58:49 PDT" duration-ms="80791" status="PASS">
+        <test-method signature="CheckSignUpValidationFirstName()[pri:3, instance:courses.SignUp@7c2b6087]" started-at="2024-07-22T11:26:03 PDT" name="CheckSignUpValidationFirstName" finished-at="2024-07-22T11:26:53 PDT" duration-ms="49499" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CheakUpdateImage -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:courses.EditProfile@726e5805]" started-at="2024-07-09T14:58:49 PDT" name="tearDown" finished-at="2024-07-09T14:58:49 PDT" duration-ms="1" status="PASS">
+        </test-method> <!-- CheckSignUpValidationFirstName -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:courses.SignUp@7c2b6087]" started-at="2024-07-22T11:26:53 PDT" name="tearDown" finished-at="2024-07-22T11:26:53 PDT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CheakUpdateImage status=SUCCESS method=EditProfile.CheakUpdateImage()[pri:2, instance:courses.EditProfile@726e5805] output={null}]]]>
+                <![CDATA[[TestResult name=CheckSignUpValidationFirstName status=SUCCESS method=SignUp.CheckSignUpValidationFirstName()[pri:3, instance:courses.SignUp@7c2b6087] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="EndTest()[pri:0, instance:courses.EditProfile@726e5805]" started-at="2024-07-09T14:58:49 PDT" name="EndTest" finished-at="2024-07-09T14:58:49 PDT" duration-ms="663" status="PASS">
+        <test-method signature="CheckSignUpValidationEmail()[pri:4, instance:courses.SignUp@7c2b6087]" started-at="2024-07-22T11:26:53 PDT" name="CheckSignUpValidationEmail" finished-at="2024-07-22T11:27:08 PDT" duration-ms="15415" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='sign-up__wrapper']//div[1]//div[1]//input[1]"}
+  (Session info: chrome=126.0.6478.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [251ef78a8b7b9e66bfb03fc10f3de714, findElement {using=xpath, value=//div[@class='sign-up__wrapper']//div[1]//div[1]//input[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\huthaifa\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53063}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53063/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 251ef78a8b7b9e66bfb03fc10f3de714]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='sign-up__wrapper']//div[1]//div[1]//input[1]"}
+  (Session info: chrome=126.0.6478.128)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.22.0', revision: 'c5f3146703*'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [251ef78a8b7b9e66bfb03fc10f3de714, findElement {using=xpath, value=//div[@class='sign-up__wrapper']//div[1]//div[1]//input[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.128, chrome: {chromedriverVersion: 126.0.6478.182 (5b5d8292ddf..., userDataDir: C:\Users\huthaifa\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53063}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53063/devtoo..., se:cdpVersion: 126.0.6478.128, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 251ef78a8b7b9e66bfb03fc10f3de714
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at courses.SignUp.CheckSignUpValidationEmail(SignUp.java:237)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckSignUpValidationEmail -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:courses.SignUp@7c2b6087]" started-at="2024-07-22T11:27:08 PDT" name="tearDown" finished-at="2024-07-22T11:27:09 PDT" duration-ms="192" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CheckSignUpValidationEmail status=FAILURE method=SignUp.CheckSignUpValidationEmail()[pri:4, instance:courses.SignUp@7c2b6087] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[The filename, directory name, or volume label syntax is incorrect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: The filename, directory name, or volume label syntax is incorrect
+at java.base/java.io.WinNTFileSystem.canonicalize0(Native Method)
+at java.base/java.io.WinNTFileSystem.canonicalize(WinNTFileSystem.java:463)
+at java.base/java.io.File.getCanonicalPath(File.java:626)
+at org.apache.commons.io.FileUtils.requireCanonicalPathsNotEquals(FileUtils.java:2601)
+at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:842)
+at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:756)
+at courses.Setup.takeSnapShot(Setup.java:111)
+at courses.SignUp.tearDown(SignUp.java:551)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="CheckSignUpValidationPassword()[pri:5, instance:courses.SignUp@7c2b6087]" started-at="2024-07-22T11:27:09 PDT" name="CheckSignUpValidationPassword" finished-at="2024-07-22T11:27:09 PDT" duration-ms="1" status="SKIP">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[The filename, directory name, or volume label syntax is incorrect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: The filename, directory name, or volume label syntax is incorrect
+at java.base/java.io.WinNTFileSystem.canonicalize0(Native Method)
+at java.base/java.io.WinNTFileSystem.canonicalize(WinNTFileSystem.java:463)
+at java.base/java.io.File.getCanonicalPath(File.java:626)
+at org.apache.commons.io.FileUtils.requireCanonicalPathsNotEquals(FileUtils.java:2601)
+at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:842)
+at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:756)
+at courses.Setup.takeSnapShot(Setup.java:111)
+at courses.SignUp.tearDown(SignUp.java:551)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckSignUpValidationPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:courses.SignUp@7c2b6087]" started-at="2024-07-22T11:27:09 PDT" name="tearDown" finished-at="1969-12-31T16:00:00 PST" duration-ms="-1721672829109" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="CheckSignUpValidationReadAndAgree()[pri:6, instance:courses.SignUp@7c2b6087]" started-at="2024-07-22T11:27:09 PDT" name="CheckSignUpValidationReadAndAgree" finished-at="2024-07-22T11:27:09 PDT" duration-ms="0" status="SKIP">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[The filename, directory name, or volume label syntax is incorrect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: The filename, directory name, or volume label syntax is incorrect
+at java.base/java.io.WinNTFileSystem.canonicalize0(Native Method)
+at java.base/java.io.WinNTFileSystem.canonicalize(WinNTFileSystem.java:463)
+at java.base/java.io.File.getCanonicalPath(File.java:626)
+at org.apache.commons.io.FileUtils.requireCanonicalPathsNotEquals(FileUtils.java:2601)
+at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:842)
+at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:756)
+at courses.Setup.takeSnapShot(Setup.java:111)
+at courses.SignUp.tearDown(SignUp.java:551)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckSignUpValidationReadAndAgree -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:courses.SignUp@7c2b6087]" started-at="2024-07-22T11:27:09 PDT" name="tearDown" finished-at="1969-12-31T16:00:00 PST" duration-ms="-1721672829121" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="CheckSignUpValidationPasswordleast_8_Characters()[pri:7, instance:courses.SignUp@7c2b6087]" started-at="2024-07-22T11:27:09 PDT" name="CheckSignUpValidationPasswordleast_8_Characters" finished-at="2024-07-22T11:27:09 PDT" duration-ms="0" status="SKIP">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[The filename, directory name, or volume label syntax is incorrect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: The filename, directory name, or volume label syntax is incorrect
+at java.base/java.io.WinNTFileSystem.canonicalize0(Native Method)
+at java.base/java.io.WinNTFileSystem.canonicalize(WinNTFileSystem.java:463)
+at java.base/java.io.File.getCanonicalPath(File.java:626)
+at org.apache.commons.io.FileUtils.requireCanonicalPathsNotEquals(FileUtils.java:2601)
+at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:842)
+at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:756)
+at courses.Setup.takeSnapShot(Setup.java:111)
+at courses.SignUp.tearDown(SignUp.java:551)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckSignUpValidationPasswordleast_8_Characters -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:courses.SignUp@7c2b6087]" started-at="2024-07-22T11:27:09 PDT" name="tearDown" finished-at="1969-12-31T16:00:00 PST" duration-ms="-1721672829128" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="CheckSignUp()[pri:8, instance:courses.SignUp@7c2b6087]" started-at="2024-07-22T11:27:09 PDT" name="CheckSignUp" finished-at="2024-07-22T11:27:09 PDT" duration-ms="0" status="SKIP">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[The filename, directory name, or volume label syntax is incorrect]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: The filename, directory name, or volume label syntax is incorrect
+at java.base/java.io.WinNTFileSystem.canonicalize0(Native Method)
+at java.base/java.io.WinNTFileSystem.canonicalize(WinNTFileSystem.java:463)
+at java.base/java.io.File.getCanonicalPath(File.java:626)
+at org.apache.commons.io.FileUtils.requireCanonicalPathsNotEquals(FileUtils.java:2601)
+at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:842)
+at org.apache.commons.io.FileUtils.copyFile(FileUtils.java:756)
+at courses.Setup.takeSnapShot(Setup.java:111)
+at courses.SignUp.tearDown(SignUp.java:551)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:676)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:660)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckSignUp -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:courses.SignUp@7c2b6087]" started-at="2024-07-22T11:27:09 PDT" name="tearDown" finished-at="1969-12-31T16:00:00 PST" duration-ms="-1721672829133" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="EndTest()[pri:0, instance:courses.SignUp@7c2b6087]" started-at="2024-07-22T11:27:09 PDT" name="EndTest" finished-at="1969-12-31T16:00:00 PST" duration-ms="-1721672829137" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- EndTest -->
-      </class> <!-- courses.EditProfile -->
+      </class> <!-- courses.SignUp -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

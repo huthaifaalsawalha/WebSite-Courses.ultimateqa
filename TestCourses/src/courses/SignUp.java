@@ -19,13 +19,15 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 public class SignUp extends Setup {
 	
 	
-	
+
 	@Test(priority = 8)
 	public void CheckSignUp () throws InvalidFormatException, IOException, InterruptedException {
 		
 		test=  extent.createTest("SignUp", "Verify SignUp");
 	XSSFSheet sheetName =  Setup.ExcelSheet("SignUp");
 		
+	driver.get("https://courses.ultimateqa.com/");
+	
 		WebElement locateSginIn = driver.findElement(By.xpath("/html/body/header/div[2]/div/nav/ul/li/a"));
 		HighlightElement(locateSginIn);
 		locateSginIn.click();
@@ -92,6 +94,8 @@ public class SignUp extends Setup {
 		test=  extent.createTest("SignUp Validation LastName", "Verify SignUp Validation LastName");
 	XSSFSheet sheetName =  Setup.ExcelSheet("SignUp");
 	
+	driver.get("https://courses.ultimateqa.com/");
+	Thread.sleep(5000);
 		WebElement locateSginIn = driver.findElement(By.xpath("/html/body/header/div[2]/div/nav/ul/li/a"));
 		HighlightElement(locateSginIn);
 		locateSginIn.click();
@@ -153,7 +157,8 @@ public class SignUp extends Setup {
 		
 		test=  extent.createTest("SignUp Validation FirstName", "Verify SignUp Validation FirstName");
 	XSSFSheet sheetName =  Setup.ExcelSheet("SignUp");
-		
+
+	
 		WebElement locateSginIn = driver.findElement(By.xpath("/html/body/header/div[2]/div/nav/ul/li/a"));
 		HighlightElement(locateSginIn);
 		locateSginIn.click();
@@ -208,14 +213,17 @@ public class SignUp extends Setup {
 						
 		
 	}
-	
+
 
 	@Test(priority = 4)
 	public void CheckSignUpValidationEmail () throws InvalidFormatException, IOException, InterruptedException {
 		
 	XSSFSheet sheetName =  Setup.ExcelSheet("SignUp");
 	 test=  extent.createTest("SignUp Validation Email", "Verify SignUp Validation Email");
-		WebElement locateSginIn = driver.findElement(By.xpath("/html/body/header/div[2]/div/nav/ul/li/a"));
+	
+
+	 
+	 WebElement locateSginIn = driver.findElement(By.xpath("/html/body/header/div[2]/div/nav/ul/li/a"));
 		HighlightElement(locateSginIn);
 		locateSginIn.click();
 		Thread.sleep(5000);
@@ -278,6 +286,8 @@ public class SignUp extends Setup {
 		 test=  extent.createTest("SignUp Validation Password", "Verify SignUp Validation Password");
 	XSSFSheet sheetName =  Setup.ExcelSheet("SignUp");
 		
+
+	
 		WebElement locateSginIn = driver.findElement(By.xpath("/html/body/header/div[2]/div/nav/ul/li/a"));
 		HighlightElement(locateSginIn);
 		locateSginIn.click();
@@ -339,6 +349,8 @@ public class SignUp extends Setup {
 		 test=  extent.createTest("SignUp Validation Read And Agree", "Verify SignUp Validation Read And Agree");
 	XSSFSheet sheetName =  Setup.ExcelSheet("SignUp");
 		
+
+	
 		WebElement locateSginIn = driver.findElement(By.xpath("/html/body/header/div[2]/div/nav/ul/li/a"));
 		HighlightElement(locateSginIn);
 		locateSginIn.click();
@@ -395,12 +407,15 @@ public class SignUp extends Setup {
 	}
 	
 	
+	
 	@Test(priority = 7)
 	public void CheckSignUpValidationPasswordleast_8_Characters () throws InvalidFormatException, IOException, InterruptedException {
 		
 		 test=  extent.createTest("SignUp Validation Passwordleast_8_Characters", "Verify SignUp Validation Passwordleast_8_Characters");
 	XSSFSheet sheetName =  Setup.ExcelSheet("SignUp");
 		
+
+	
 		WebElement locateSginIn = driver.findElement(By.xpath("/html/body/header/div[2]/div/nav/ul/li/a"));
 		HighlightElement(locateSginIn);
 		locateSginIn.click();
@@ -463,6 +478,8 @@ public class SignUp extends Setup {
 		 test=  extent.createTest("SignUp Validation Email Ready", "Verify SignUp Validation Email Ready");
 	XSSFSheet sheetName =  Setup.ExcelSheet("SignUp");
 		
+
+	
 		WebElement locateSginIn = driver.findElement(By.xpath("/html/body/header/div[2]/div/nav/ul/li/a"));
 		HighlightElement(locateSginIn);
 		locateSginIn.click();
@@ -510,20 +527,20 @@ public class SignUp extends Setup {
 								
 								 String acualText = driver.findElement(By.xpath("//li[@class='form-error__list-item']")).getText();
 									
-								 String expectedText= "Email has already been taken";
+								 String expectedText= "The username and/or password entered are incorrect, please try again.";
 							  myAssert.assertEquals(acualText, expectedText);
 							  myAssert.assertAll();
 						
 						
 		
 	}
-
+	
 	
 	@AfterMethod
 	public void tearDown(ITestResult result) throws Exception {
 		  Random random =new Random();
 		  int num = random.nextInt();
-		String path="C:\\Users\\alsaw\\OneDrive\\Desktop\\New folder (5)\\test"+num+".png";
+		String path="‪C:\\Users\\huthaifa\\Desktop\\report"+num+".png";
 	 if(result.FAILURE==result.getStatus())
 	 {
 		   
